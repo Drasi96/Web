@@ -1,21 +1,14 @@
 {
   "name": "webenterprise",
   "version": "1.0.0",
-  "description": "Repo for the web enterprise module",
-  "main": "main.js",
+  "description": "node on heroku",
+  "main": "index.js",
   
   "scripts": {
-    "start": "node myserver.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/Drasi96/Web.git"
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Andras",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Drasi96/Web/issues"
-  },
-  "homepage": "https://github.com/Drasi96/Web#readme"
+  "license": "ISC"
 }
