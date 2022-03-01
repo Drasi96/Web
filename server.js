@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 8080;
 var port = PORT;
 // send our index.html file to the user for the home page
 app.get('/', function(req, res) { 
+
  res.sendFile(__dirname + '/index.html');
-});
-///////////////////////////////////////////////////////////////////
+ ///////////////////////////////////////////////////////////////////
 // create routes for the admin section
 //get an instance of the router
 var adminRouter = express.Router();
@@ -32,6 +32,9 @@ adminRouter.use(function(req, res, next) {
     // continue doing what we were doing and go to the route
     next(); });
    ///////////////////////////////////////////////////////////////////
+
+});
+
 
 // start the server
 app.listen(PORT);
