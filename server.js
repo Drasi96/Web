@@ -23,7 +23,6 @@ adminRouter.get('/users', function(req, res) {
 adminRouter.get('/posts', function(req, res) {
  res.send('I show all the posts!'); });
 // apply the routes to our application
-app.use('/admin', adminRouter);
  // route with parameters (http://localhost:PORT/admin/users/:name)
  adminRouter.get('/users/:name', function(req, res) {
     res.send('hello ' + req.params.name + '!'); }); 
@@ -35,6 +34,8 @@ adminRouter.use(function(req, res, next) {
     // continue doing what we were doing and go to the route
     next(); });
    ///////////////////////////////////////////////////////////////////
+app.use('/admin', adminRouter);
+
 
 });
 
