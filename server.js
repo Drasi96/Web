@@ -4,6 +4,10 @@ var express = require('express');
 var app = express();
 const PORT = process.env.PORT || 8080;
 // set the port based on environment (more on environments later)
+const DBURI = process.env.DBURI || "mongodb://127.0.0.1:27017"
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = DBURI;
 var port = PORT;
 // send our index.html file to the user for the home page
 app.get('/', function(req, res) { 
