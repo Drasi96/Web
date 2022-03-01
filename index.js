@@ -9,7 +9,9 @@ http.createServer(function(request,response){
 
     response.end('Hello World\n');
 
-}).listen(PORT, () => {
+}).listen(8080);
+    
+app.listen(PORT, () => {
 
 //Console will print the message
 console.log('Our app is running on port ${ PORT }');
