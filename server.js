@@ -23,7 +23,7 @@ adminRouter.get('/users', function(req, res) {
 adminRouter.get('/posts', function(req, res) {
  res.send('I show all the posts!'); });
 // apply the routes to our application
-app.use('https://sleepy-savannah-40413.herokuapp.com/admin', adminRouter);
+app.use('/admin', adminRouter);
 ///////////////////////////////////////////////////////////////////
 // route middleware that will happen on every request
 adminRouter.use(function(req, res, next) {
