@@ -21,7 +21,7 @@ adminRouter.get('/users', function(req, res) {
 adminRouter.get('/posts', function(req, res) {
  res.send('I show all the posts!'); });
 // apply the routes to our application
-app.use('/admin', adminRouter);
+app.use('https://sleepy-savannah-40413.herokuapp.com/admin', adminRouter);
 ///////////////////////////////////////////////////////////////////
  res.sendFile(__dirname + '/index.html');
 });
